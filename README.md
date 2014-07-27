@@ -1,4 +1,3 @@
-GettingAndCleaningData
-======================
+#run_analysis.R script description
 
-Repository dedicated to Coursera's "Getting And Cleaning Data" Course Project from Johns Hopkins
+This script start by loading the various training and test sets, which is quite straightforward. The only "tricky part"" is the selection of columns in the main datasets xtest and xtrain: grepl is used to identify all the columns in the dataset which describe a mean or an standard deviation value and to create a vector indicating which column should be read and which should not be loaded in memory Please refer to the comments in the code for futher details
